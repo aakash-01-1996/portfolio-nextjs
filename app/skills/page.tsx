@@ -28,8 +28,8 @@ const skills = [
     items: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "LLMs"],
   },
   {
-    title: "Mobile",
-    items: ["React Native", "Flutter", "Swift", "Kotlin"],
+    title: "Mobile Development",
+    items: ["React Native", "Flutter", "Swift", "Kotlin", "Android Development"],
   },
   {
     title: "Tools & Technologies",
