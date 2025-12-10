@@ -6,7 +6,7 @@ Disallow: /node_modules/
 
 Crawl-delay: 1
 
-Sitemap: https://aakash-portfolio.vercel.app/sitemap.xml
+Sitemap: https://aakashambodkar.vercel.app/sitemap.xml
 
 # Allow major search engines
 User-agent: Googlebot

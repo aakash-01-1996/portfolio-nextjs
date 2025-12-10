@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Aakash Ambodkar - Software Engineer & Full Stack Developer",
   description: "Full Stack Developer | AI/ML Engineer | System Design Expert. Experienced in building scalable web applications, designing distributed systems, and developing AI/ML solutions. Based in the US.",
   keywords: "software engineer, full stack developer, AI/ML engineer, React, Node.js, Python, system design, cloud computing, distributed systems",
-  authors: [{ name: "Aakash Ambodkar", url: "https://aakash-portfolio.vercel.app" }],
+  authors: [{ name: "Aakash Ambodkar", url: "https://aakashambodkar.vercel.app" }],
   creator: "Aakash Ambodkar",
   robots: {
     index: true,
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aakash-portfolio.vercel.app",
+    url: "https://aakashambodkar.vercel.app",
     siteName: "Aakash Ambodkar - Portfolio",
     title: "Aakash Ambodkar - Software Engineer & Full Stack Developer",
     description: "Full Stack Developer | AI/ML Engineer | System Design Expert. View my projects and skills.",
     images: [
       {
-        url: "https://aakash-portfolio.vercel.app/og-image.jpg",
+        url: "https://aakashambodkar.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Aakash Ambodkar - Software Engineer",
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     title: "Aakash Ambodkar - Software Engineer",
     description: "Full Stack Developer | AI/ML Engineer | System Design",
     creator: "@AakashAmbodkar7",
-    images: ["https://aakash-portfolio.vercel.app/twitter-image.jpg"],
+    images: ["https://aakashambodkar.vercel.app/twitter-image.jpg"],
   },
   alternates: {
-    canonical: "https://aakash-portfolio.vercel.app",
+    canonical: "https://aakashambodkar.vercel.app",
   },
 };
 
