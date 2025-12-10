@@ -81,8 +81,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Aakash Ambodkar",
-              url: "https://aakash-portfolio.vercel.app",
-              image: "https://aakash-portfolio.vercel.app/avatar.jpg",
+              url: "https://aakashambodkar.vercel.app",
+              image: "https://avatars.githubusercontent.com/u/129121618?v=4",
               jobTitle: "Software Engineer",
               worksFor: {
                 "@type": "Organization",
