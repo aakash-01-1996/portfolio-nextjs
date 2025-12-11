@@ -1,13 +1,21 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const [year, setYear] = useState<number>(new Date().getFullYear());
+  const pathname = usePathname();
+  const isContactPage = pathname === '/contact';
 
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);
+
+  // Only render footer on contact page
+  if (!isContactPage) {
+    return null;
+  }
 
   return (
     <footer>

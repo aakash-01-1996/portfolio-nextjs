@@ -655,9 +655,9 @@ header {
     box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
-/* Footer */
+/* Footer - shown only on contact page via component logic */
 footer {
-    padding: 0.5rem 2rem;
+    padding: 0.35rem 1.5rem;
     background-color: var(--header-bg);
     color: var(--header-text);
     margin-top: auto;
@@ -678,7 +678,7 @@ footer {
 
 .footer-year,
 .footer-credit {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     white-space: nowrap;
 }
 
