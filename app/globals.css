@@ -655,7 +655,7 @@ header {
     box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
-/* Footer - shown only on contact page via component logic */
+/* Footer - shown on all pages desktop, only contact on mobile */
 footer {
     padding: 0.35rem 1.5rem;
     background-color: var(--header-bg);
@@ -900,6 +900,16 @@ footer {
 
 /* ===== MOBILE RESPONSIVENESS (767px and below) ===== */
 @media (max-width: 767px) {
+    /* Hide footer on all pages except contact on mobile */
+    footer {
+        display: none;
+    }
+    
+    /* Show footer on contact page */
+    main:has(.contact-container) ~ footer {
+        display: flex !important;
+    }
+    
     /* Hero section - reduce font sizes on mobile */
     .hero {
         padding: 2rem 1.5rem;
