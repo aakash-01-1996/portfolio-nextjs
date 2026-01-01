@@ -21,6 +21,7 @@ interface Project {
   name: string;
   description: string;
   githubLink: string;
+  liveLink?: string;
   stars: number;
   addedDate: string;
 }
@@ -30,6 +31,7 @@ const FALLBACK_PROJECTS: Project[] = [
     name: "Project 1",
     description: "This is a description of Project 1.",
     githubLink: "https://github.com/aakash-01-1996/project1",
+    liveLink: "",
     stars: 50,
     addedDate: "2025-12-01",
   },
@@ -37,6 +39,7 @@ const FALLBACK_PROJECTS: Project[] = [
     name: "Project 2",
     description: "This is a description of Project 2.",
     githubLink: "https://github.com/aakash-01-1996/project2",
+    liveLink: "",
     stars: 30,
     addedDate: "2025-11-15",
   },
@@ -44,6 +47,7 @@ const FALLBACK_PROJECTS: Project[] = [
     name: "Project 3",
     description: "This is a description of Project 3.",
     githubLink: "https://github.com/aakash-01-1996/project3",
+    liveLink: "",
     stars: 70,
     addedDate: "2025-12-05",
   },
@@ -129,6 +133,7 @@ export default function Projects() {
           name: repo.name,
           description: repo.description || "Work in progress..",
           githubLink: repo.html_url,
+          liveLink: repo.homepage || "",
           stars: repo.stargazers_count || 0,
           addedDate: repo.created_at || repo.pushed_at || new Date().toISOString(),
         }));
@@ -229,14 +234,28 @@ export default function Projects() {
                   <p className="project-description">{escapeHtml(project.description || "")}</p>
                   <div className="project-footer">
                     <span className="project-stars">★ {project.stars || 0}</span>
-                    <a
-                      href={escapeAttr(project.githubLink)}
-                      target="_blank"
-                      rel="noopener"
-                      className="view-github"
-                    >
-                      &lt; View on GitHub &gt;
-                    </a>
+                    <div className="project-buttons">
+                      {project.liveLink ? (
+                        <a
+                          href={escapeAttr(project.liveLink)}
+                          target="_blank"
+                          rel="noopener"
+                          className="view-live"
+                        >
+                          Live
+                        </a>
+                      ) : (
+                        <span className="view-live disabled">Live</span>
+                      )}
+                      <a
+                        href={escapeAttr(project.githubLink)}
+                        target="_blank"
+                        rel="noopener"
+                        className="view-github"
+                      >
+                        Code
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
